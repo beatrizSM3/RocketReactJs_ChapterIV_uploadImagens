@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import {
   Box,
   FormLabel,
@@ -33,7 +34,7 @@ import { api } from '../../services/api';
 
 export interface FileInputProps {
   name: string;
-  error?: FieldError;
+  error?: Partial<FieldError>;
   setImageUrl: Dispatch<SetStateAction<string>>;
   localImageUrl: string;
   setLocalImageUrl: Dispatch<SetStateAction<string>>;

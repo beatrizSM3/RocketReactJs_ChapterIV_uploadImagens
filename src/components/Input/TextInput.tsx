@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { forwardRef, ForwardRefRenderFunction } from 'react';
 import { FieldError } from 'react-hook-form';
 import {
@@ -12,7 +13,7 @@ import { FiAlertCircle } from 'react-icons/fi';
 
 interface InputProps extends ChakraInputProps {
   name: string;
-  error?: FieldError;
+  error?: Partial<FieldError>;
 }
 
 const TextInputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
